@@ -1,4 +1,30 @@
 body {
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+.navbar-brand{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+button{
+  margin: 0.25rem;
+}
+main{
+  color: white;
+}
+.lightMode {
+  background-color: antiquewhite;
+}
+.lightMode h1,.lightMode #formularioContacto,.lightMode h3{
+  color: black;
+}
+#formularioContacto{
+  text-align: justify;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.darkMode{
+  background-color: #002b36;
+}
