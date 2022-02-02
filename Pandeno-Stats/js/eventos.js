@@ -1,5 +1,5 @@
 $(() => {
-
+    //DarkMode y LightMode
     if(localStorage.getItem('darkMode') == "dark") {
         $('body').addClass('darkMode')
         $('body').removeClass('lightMode')
@@ -13,6 +13,8 @@ $(() => {
         $('.card').addClass('bg-dark')
         $('.paisTabla').removeClass('table-light')
         $('.paisTabla').addClass('table-dark')
+        $('.modal-content').removeClass('bg-primary')
+        $('.modal-content').addClass('bg-dark')
     } else {
         $('#btnLightMode').hide()
         $('body').addClass('lightMode')
@@ -32,6 +34,8 @@ $(() => {
         $('.card').addClass('bg-dark')
         $('.paisTabla').removeClass('table-light')
         $('.paisTabla').addClass('table-dark')
+        $('.modal-content').removeClass('bg-primary')
+        $('.modal-content').addClass('bg-dark')
         localStorage.setItem('darkMode', "dark")
     })
     $('#btnLightMode').click(() => {
@@ -47,6 +51,8 @@ $(() => {
         $('.card').removeClass('bg-dark')
         $('.paisTabla').addClass('table-light')
         $('.paisTabla').removeClass('table-dark')
+        $('.modal-content').addClass('bg-primary')
+        $('.modal-content').removeClass('bg-dark')
         localStorage.setItem('darkMode', "light")
     })
     //Obtengo informacion del formulario 
@@ -85,6 +91,7 @@ $(() => {
         console.log(`Ahi va ${paisenlista.pais}`)
         }) 
     })
+    //Buscador por nombre
     $('#buscarPais').submit((e) => {
         e.preventDefault()
         paisesStorage = JSON.parse(localStorage.getItem('listaPaises'))
@@ -108,5 +115,8 @@ $(() => {
             </tr>
             `)
         })
+    })
+    $('#enviar').click(() =>{
+
     })
 })

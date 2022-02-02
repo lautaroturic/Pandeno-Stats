@@ -58,10 +58,23 @@
                                                 Acepto recibir noticias y anuncios.
                                             </label>
                                         </div>
-                                        <button id="enviar" type="button" class="btn btn-success">Enviar</button>
+                                        <button id="enviar" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Enviar</button>
                                     </fieldset>
-                                </form>
+                                </form>                                
                                 
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content bg-primary">
+                                        <div class="modal-header">
+                                        <h4 class="modal-title">Enviado</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        Se registro correctamente su email. En los proximos minutos reicbira un mail de confirmacion.
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
             </section>
