@@ -1,15 +1,3 @@
-/*Por hacer 
-navbar <-
-Darkmode con boton en la nav <-
-fromulario de contacto<-
-orden alfabetico paises <-
-buscador por nombre de lista<-
-hacer barra de progreso con el total mundial X
-
-tratar de hacer una parte de info parcial con api
----------------------------------------------
-*/
-//Comparar los porcentajes de muertos o contagiados por millon de habitantes de una lista de paises y mostrarlos en la pagina
 
 let paisesStorage;
 let paises;
